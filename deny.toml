@@ -1,10 +1,8 @@
 [advisories]
 yanked = "deny"
 ignore = [
-    # Marvin timing side-channel in RSA *decryption* (unfixed upstream since
-    # 2023). We use the rsa crate only to sign GitHub App JWTs with our own
-    # key; the app performs no RSA decryption an attacker could time.
-    "RUSTSEC-2023-0071",
+    # Upstream blob: origin recursive parse stack depth limit in url <= 2.5.8
+    "RUSTSEC-2026-0592",
 ]
 
 [licenses]
